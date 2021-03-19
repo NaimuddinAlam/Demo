@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Demo</string>
+    <string name="complaint">Complaint</string>
+    <string name="Login">Login</string>
+    <string name="Sign">Sign In</string>
+    <string name="username">User Name</string>
+    <string name="password">Password</string>
+    <string name="created">Created by he</string>
+    <string name="assigned">Assigned to me</string>
+    <string name="status">Complaint Status</string>
+    <string name="lodge">Lodge a Complaint </string>
+    <string name="analysis">Complaint Analysis</string>
+    <string name="profile">Profile</string>
+    <string name="change_pass">Change Password</string>
+    <string name="logout">Logout</string>
+    <string name="close">Close</string>
+    <string name="open">Open</string>
+    <string name="next">Next</string>
+    <string name="save">Save</string>
+
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="type">Type</string>
+    <string name="amount">Amount</string>
+    <string name="exp.cls">Exp.Close Date</string>
+    <string name="railway">Railway</string>
+    <string name="shed">Shed</string>
+    <string name="loco">Loco</string>
+    <string name="serial_no.1">Serial No.1</string>
+    <string name="serial_no.2">Serial No.2</string>
+    <string name="product">Product</string>
+    <string name="reported_by">Reported By</string>
+    <string name="complaint_summary">Complaint Summary</string>
+    <string name="complaint_nature">Complaint Nature</string>
+    <string name="warranty_shed">Warranty Shed</string>
+    <string name="mfg1">Mfg Warranty 1</string>
+    <string name="mfg2">Mfg Warranty 2</string>
+    <string name="warr">Warr. PU Out</string>
+    <string name="category">Category</string>
+    <string name="priority">Priority</string>
+    <string name="assign">Assign To</string>
+    <string name="could_not_connect">Could not connect to internet</string>
+    <string name="complaint_details">Complaint Details</string>
+    <string name="update">Update Status</string>
+    <string name="views">View</string>
+    <string name="complaint_id">Complaint Id</string>
+    <string name="Search">Typing here...</string>
+
+    <string name="statusdate">Status Date</string>
+    <string name="natureoffailure">Nature Of Failure</string>
+    <string name="typeoffailure">Type of Failure</string>
+    <string name="action">Action Taken</string>
+    <string name="solution">Solution</string>
+    <string name="view">View Complaint</string>
+    <string name="edit">Edit</string>
+    <string name="part">Part Replaced/Repaired</string>
+
+    <string name="selectcompany">Select Company Name</string>
+    <string name="selectcenter">Select Center  Name</string>
+    <string name="entername">Enter User Name</string>
+    <string name="enterpass">"Enter User Password</string>
+    <string name="invaliduser">Invalid User</string>
+</resources>

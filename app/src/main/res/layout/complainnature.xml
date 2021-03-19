@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/value_10dp"
+        android:layout_marginTop="@dimen/value_10dp"
+        android:layout_marginRight="@dimen/value_10dp"
+        android:elevation="@dimen/value_20dp"
+        android:orientation="vertical"
+       >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/value_20dp"
+            android:layout_marginBottom="@dimen/value_20dp"
+
+            android:elevation="@dimen/value_20dp"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+          <!--  <Button
+                android:id="@+id/bt_cancel"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginRight="@dimen/value_20dp"
+                android:background="@drawable/cancel"
+                android:text="@string/cancel"
+                android:textColor="@color/black"
+                android:textSize="@dimen/value_13sp" />-->
+
+            <Button
+                android:id="@+id/bt_save"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginBottom="@dimen/value_20dp"
+                android:background="@drawable/button"
+                android:text="Back"
+                android:textColor="@color/white"
+                android:textSize="@dimen/value_15sp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

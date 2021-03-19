@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#3654D0</color>
+    <color name="purple_500">#3654D0</color>
+    <color name="purple_700">#3654D0</color>
+    <color name="teal_200">#3654D0</color>
+    <color name="teal_700">#3654D0</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="enter">#404352</color>
+    <color name="mobile">#69707B</color>
+    <color name="continu">#FD6A39</color>
+    <color name="line">#BEC4C9</color>
+    <color name="trans">#00000000 </color>.
+    <color name="otp_line">#E7E9F0</color>
+    <color name="verified">#0EA332</color>
+    <color name="text_color">#69707B</color>
+    <color name="secondary_text">#656877</color>
+    <color name="colorPrimary">#3654D0</color>
+    <color name="colorPrimaryDark">#3654D0</color>
+    <color name="colorAccent">#3654D0</color>
+    <color name="card_bg">#F5F6FA</color>
+</resources>

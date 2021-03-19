@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/value_5dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/card_bg"
+        app:cardCornerRadius="@dimen/value_10dp"
+        app:cardElevation="@dimen/value_10dp"
+        app:cardPreventCornerOverlap="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/value_10dp"
+            android:layout_marginRight="@dimen/value_10dp"
+            android:layout_marginBottom="@dimen/value_10sp"
+        >
+
+            <TextView
+                android:id="@+id/tvrepro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="@dimen/value_5dp"
+                android:layout_marginTop="@dimen/value_5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:text="@string/reported_by"
+                android:textColor="@color/black"
+                android:textSize="@dimen/value_14sp" />
+            <TextView
+                android:id="@+id/tvrepros"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvrepro"
+                android:text="hckxz"
+                android:layout_marginLeft="@dimen/value_5dp"
+                android:layout_marginTop="@dimen/value_5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/value_12sp" />
+            <TextView
+                android:id="@+id/tvassign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvrepro"
+                android:layout_marginRight="@dimen/value_5dp"
+                android:layout_marginTop="@dimen/value_5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:text="@string/assign"
+                android:textColor="@color/black"
+                android:textSize="@dimen/value_14sp" />
+            <TextView
+                android:id="@+id/tvassignto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvassign"
+                android:layout_below="@+id/tvrepro"
+                android:layout_marginLeft="@dimen/value_5dp"
+                android:layout_marginTop="@dimen/value_5dp"
+                android:text="ihxckj"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/value_12sp" />
+            <TextView
+                android:id="@+id/tvcompid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvassign"
+                android:layout_marginRight="@dimen/value_5dp"
+                android:layout_marginTop="@dimen/value_5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:text="@string/complaint_id"
+                android:textColor="@color/black"
+                android:textSize="@dimen/value_14sp" />
+            <TextView
+                android:id="@+id/tvcompids"
+                android:layout_width="@dimen/value_20dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvcompid"
+                android:layout_below="@+id/tvassign"
+                android:layout_marginLeft="@dimen/value_5dp"
+                android:layout_marginTop="@dimen/value_5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/value_12sp" />
+            <TextView
+                android:id="@+id/tvdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvassign"
+                android:layout_toLeftOf="@+id/tvdates"
+                android:layout_marginRight="@dimen/value_5dp"
+                android:layout_marginTop="@dimen/value_5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/date"
+                android:textColor="@color/black"
+                android:textSize="@dimen/value_14sp" />
+            <TextView
+                android:id="@+id/tvdates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tvassign"
+                android:layout_marginLeft="@dimen/value_5dp"
+                android:layout_marginTop="@dimen/value_5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/value_12sp" />
+
+            <TextView
+                android:id="@+id/tvrailway"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvloco"
+                android:layout_marginRight="@dimen/value_5dp"
+                android:layout_marginTop="@dimen/value_5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:text="@string/railway"
+                android:textColor="@color/black"
+                android:textSize="@dimen/value_14sp" />
+            <TextView
+                android:id="@+id/tvrailwayno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvrailway"
+                android:layout_below="@+id/tvloco"
+                android:layout_marginLeft="@dimen/value_5dp"
+                android:layout_marginTop="@dimen/value_5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/value_12sp" />
+            <TextView
+                android:id="@+id/tvshed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvloco"
+                android:layout_toLeftOf="@+id/tvsheds"
+                android:layout_marginRight="@dimen/value_5dp"
+                android:layout_marginTop="@dimen/value_5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/shed"
+                android:textColor="@color/black"
+                android:textSize="@dimen/value_14sp" />
+            <TextView
+                android:id="@+id/tvsheds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tvloco"
+                android:layout_marginRight="@dimen/value_5dp"
+                android:layout_marginTop="@dimen/value_5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/value_12sp" />
+
+            <TextView
+                android:id="@+id/tvloco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvcompid"
+                android:layout_marginRight="@dimen/value_5dp"
+                android:layout_marginTop="@dimen/value_5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:text="@string/loco"
+                android:textColor="@color/black"
+                android:textSize="@dimen/value_14sp" />
+            <TextView
+                android:id="@+id/tvlocos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvloco"
+                android:layout_below="@+id/tvcompid"
+                android:layout_marginLeft="@dimen/value_5dp"
+                android:layout_marginTop="@dimen/value_5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/value_12sp" />
+            <TextView
+                android:id="@+id/tvstatuss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvcompid"
+                android:layout_toLeftOf="@+id/tvstatusss"
+                android:layout_marginRight="@dimen/value_10dp"
+                android:layout_marginTop="@dimen/value_5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/status"
+                android:textColor="@color/black"
+                android:textSize="@dimen/value_14sp" />
+            <TextView
+                android:id="@+id/tvstatusss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tvcompid"
+                android:layout_marginRight="@dimen/value_5dp"
+                android:layout_marginTop="@dimen/value_5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/value_12sp" />
+
+            <TextView
+                android:id="@+id/tvsummry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvrailway"
+                android:layout_marginRight="@dimen/value_5dp"
+                android:layout_marginTop="@dimen/value_5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:text="@string/complaint_summary"
+                android:textColor="@color/black"
+                android:textSize="@dimen/value_14sp" />
+            <TextView
+                android:id="@+id/tvsummrys"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvsummry"
+                android:layout_below="@+id/tvrailway"
+                android:singleLine="true"
+                android:layout_marginLeft="@dimen/value_10dp"
+                android:layout_marginTop="@dimen/value_5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/value_12sp" />
+            <TextView
+                android:id="@+id/tvstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/value_5dp"
+                android:layout_below="@+id/tvsummry"
+
+                android:background="@drawable/tab"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:text="@string/update"
+                android:textAlignment="center"
+                android:layout_alignParentBottom="true"
+
+                android:textColor="@color/white"
+                android:textSize="@dimen/value_14" />
+            <TextView
+                android:id="@+id/tvview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/value_10dp"
+                android:background="@drawable/tab"
+                android:layout_below="@+id/tvsummry"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:text="@string/views"
+                android:textAlignment="center"
+                android:layout_marginRight="@dimen/value_10dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/value_14" />
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

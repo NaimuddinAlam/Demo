@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.CreateBy">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbars" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/value_20dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/li7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/value_10dp"
+
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#FAFAFA">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+
+                                android:background="@drawable/board"
+                                android:orientation="horizontal"
+                                tools:ignore="UselessParent">
+
+                                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                                    android:id="@+id/sp_pro"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="8dp"
+                                    android:overlapAnchor="false"
+                                    android:spinnerMode="dropdown" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="75dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="9dp"
+                                android:layout_marginTop="-5dp"
+                                android:background="#FAFAFA"
+                                android:fontFamily="@font/poppins_regular"
+                                android:paddingLeft="3dp"
+                                android:paddingRight="3dp"
+                                android:text="@string/product" />
+                        </RelativeLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/etrep"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/value_10dp"
+
+                            >
+
+                            <EditText
+                                android:id="@+id/etrepby"
+                                style="@style/MyEditTextStyle"
+                                android:hint="@string/reported_by"
+                                android:inputType="text" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/li8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/li7"
+
+                        android:layout_marginTop="@dimen/value_10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/value_5dp"
+                            android:layout_weight="1"
+
+                            android:background="#FAFAFA">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+
+                                android:background="@drawable/board"
+                                android:orientation="horizontal"
+                                tools:ignore="UselessParent">
+
+                                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                                    android:id="@+id/sp_category"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/value_50"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="8dp"
+                                    android:overlapAnchor="false"
+                                    android:spinnerMode="dropdown" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="85dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="9dp"
+                                android:layout_marginTop="-5dp"
+                                android:background="#FAFAFA"
+                                android:fontFamily="@font/poppins_regular"
+                                android:paddingLeft="3dp"
+                                android:paddingRight="3dp"
+                                android:text="@string/category" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/li12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/li8"
+                        android:layout_marginTop="@dimen/value_10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/value_5dp"
+                            android:layout_weight="1"
+
+                            android:background="#FAFAFA">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/board"
+                                android:orientation="horizontal"
+                                tools:ignore="UselessParent">
+
+                                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                                    android:id="@+id/sp_priority"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="58dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="8dp"
+                                    android:overlapAnchor="false"
+                                    android:spinnerMode="dropdown" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="75dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="9dp"
+                                android:layout_marginTop="-5dp"
+                                android:background="#FAFAFA"
+                                android:fontFamily="@font/poppins_regular"
+                                android:paddingLeft="3dp"
+                                android:paddingRight="3dp"
+                                android:text="@string/priority" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/li10"
+                            android:layout_width="0dp"
+
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+
+
+                            android:background="#FAFAFA">
+
+
+                            <LinearLayout
+
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginTop="@dimen/value_5dp"
+                                android:layout_weight="8"
+                                android:background="@drawable/board"
+                                android:orientation="horizontal"
+                                tools:ignore="UselessParent">
+
+                                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                                    android:id="@+id/sp_assign"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="8dp"
+                                    android:overlapAnchor="false"
+                                    android:spinnerMode="dropdown" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="90dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="9dp"
+                                android:layout_marginTop="-5dp"
+                                android:background="#FAFAFA"
+                                android:fontFamily="@font/poppins_regular"
+                                android:paddingLeft="3dp"
+                                android:paddingRight="3dp"
+                                android:text="@string/assign" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl12"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/li12"
+                        android:layout_marginTop="@dimen/value_10dp"
+                        android:background="#FAFAFA">
+
+                        <Button
+                            android:id="@+id/btcom"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/complaint_nature"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/value_18sp" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerview11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/btcom" />
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/etcoms"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/recyclerview11"
+                            android:layout_marginTop="@dimen/value_20dp">
+
+                            <EditText
+                                android:id="@+id/etcomdetails"
+                                style="@style/MyEditTextStyle"
+                                android:hint="@string/complaint_details"
+                                android:inputType="textMultiLine"
+                                android:maxLines="5" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <ImageView
+                            android:id="@+id/imagefile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/etcoms"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="@dimen/value_10dp"
+                            android:src="@drawable/ic_attach" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerview111"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imagefile" />
+                    </RelativeLayout>
+
+
+                    <Button
+                        android:id="@+id/btsave"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl12"
+                        android:layout_marginLeft="@dimen/value_20dp"
+                        android:layout_marginTop="@dimen/value_30dp"
+                        android:layout_marginRight="@dimen/value_20dp"
+                        android:background="@drawable/button"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="@string/save"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/value_20sp" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</layout>

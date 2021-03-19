@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.CreateBy">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbars" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/value_20dp">
+
+                    <LinearLayout
+                        android:id="@+id/litd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/etdate"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/etdates"
+                                style="@style/MyEditTextStyle"
+                                android:cursorVisible="false"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:hint="@string/date"
+                                android:inputType="none"
+                                android:textAlignment="center" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/ettime"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/ettimes"
+                                style="@style/MyEditTextStyle"
+                                android:cursorVisible="false"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:hint="@string/time"
+                                android:inputType="none"
+                                android:textAlignment="center" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/li"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/litd"
+
+                        android:layout_marginTop="@dimen/value_10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/value_5dp"
+                            android:layout_weight="1"
+
+                            android:background="#FAFAFA">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+
+                                android:background="@drawable/board"
+                                android:orientation="horizontal"
+                                tools:ignore="UselessParent">
+
+                                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                                    android:id="@+id/sptype"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/value_50"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="8dp"
+                                    android:overlapAnchor="false"
+                                    android:spinnerMode="dropdown" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="9dp"
+                                android:layout_marginTop="-5dp"
+                                android:background="#FAFAFA"
+                                android:fontFamily="@font/poppins_regular"
+                                android:paddingLeft="3dp"
+                                android:paddingRight="3dp"
+                                android:text="@string/type" />
+                        </RelativeLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/etexdate"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/value_5dp"
+                            android:layout_weight="1"
+
+                            >
+
+                            <EditText
+                                android:id="@+id/etexdates"
+                                style="@style/MyEditTextStyle"
+                                android:hint="@string/exp.cls"
+                                android:focusableInTouchMode="false"
+                                android:cursorVisible="false"
+                                android:inputType="none" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/li1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/li"
+
+                        android:layout_marginTop="@dimen/value_10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/value_5dp"
+                            android:layout_weight="1"
+
+                            android:background="#FAFAFA">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+
+                                android:background="@drawable/board"
+                                android:orientation="horizontal"
+                                tools:ignore="UselessParent">
+
+                                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                                    android:id="@+id/sprailway"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/value_50"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="8dp"
+                                    android:overlapAnchor="false"
+                                    android:spinnerMode="dropdown" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="67dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="9dp"
+                                android:layout_marginTop="-5dp"
+                                android:background="#FAFAFA"
+                                android:fontFamily="@font/poppins_regular"
+                                android:paddingLeft="3dp"
+                                android:paddingRight="3dp"
+                                android:text="@string/railway" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/value_5dp"
+                            android:layout_weight="1"
+
+                            android:background="#FAFAFA">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+
+                                android:background="@drawable/board"
+                                android:orientation="horizontal"
+                                tools:ignore="UselessParent">
+
+                                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                                    android:id="@+id/spshed"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/value_50"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="8dp"
+                                    android:overlapAnchor="false"
+                                    android:spinnerMode="dropdown" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="45dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="9dp"
+                                android:layout_marginTop="-5dp"
+                                android:background="#FAFAFA"
+                                android:fontFamily="@font/poppins_regular"
+                                android:paddingLeft="3dp"
+                                android:paddingRight="3dp"
+                                android:text="@string/shed" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/li1"
+
+                        android:layout_marginTop="@dimen/value_10dp"
+
+                        android:background="#FAFAFA">
+
+                        <LinearLayout
+                            android:id="@+id/li3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginTop="@dimen/value_5dp"
+                            android:layout_weight="8"
+                            android:background="@drawable/board"
+                            android:orientation="horizontal"
+                            tools:ignore="UselessParent">
+
+                            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                                android:id="@+id/sp_loco"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="8dp"
+                                android:overlapAnchor="false"
+                                android:spinnerMode="dropdown" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="45dp"
+                            android:layout_height="28dp"
+                            android:layout_marginLeft="9dp"
+                            android:layout_marginTop="-5dp"
+                            android:background="#FAFAFA"
+                            android:fontFamily="@font/poppins_regular"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="3dp"
+                            android:text="@string/loco" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/li4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl"
+
+                        android:layout_marginTop="@dimen/value_10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/value_5dp"
+                            android:layout_weight="1"
+
+                            android:background="#FAFAFA">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+
+                                android:background="@drawable/board"
+                                android:orientation="horizontal"
+                                tools:ignore="UselessParent">
+
+                                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                                    android:id="@+id/spserial1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/value_50"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="8dp"
+                                    android:overlapAnchor="false"
+                                    android:spinnerMode="dropdown" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="85dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="9dp"
+                                android:layout_marginTop="-5dp"
+                                android:background="#FAFAFA"
+                                android:fontFamily="@font/poppins_regular"
+                                android:paddingLeft="3dp"
+                                android:paddingRight="3dp"
+                                android:text="@string/serial_no.1" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/value_5dp"
+                            android:layout_weight="1"
+
+                            android:background="#FAFAFA">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+
+                                android:background="@drawable/board"
+                                android:orientation="horizontal"
+                                tools:ignore="UselessParent">
+
+                                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                                    android:id="@+id/spserial2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/value_50"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="8dp"
+                                    android:overlapAnchor="false"
+                                    android:spinnerMode="dropdown" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="85dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="9dp"
+                                android:layout_marginTop="-5dp"
+                                android:background="#FAFAFA"
+                                android:fontFamily="@font/poppins_regular"
+                                android:paddingLeft="3dp"
+                                android:paddingRight="3dp"
+                                android:text="@string/serial_no.2" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/li5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/li4"
+                        android:layout_marginTop="@dimen/value_10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/etwpo"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/value_5dp"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/etwarrpo"
+                                style="@style/MyEditTextStyle"
+                                android:hint="@string/warr"
+                                android:focusableInTouchMode="false"
+                                android:focusable="false"
+                                android:cursorVisible="false"
+                                android:inputType="none" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/etwarrs"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/value_5dp"
+                            android:layout_weight="1"
+
+                            >
+
+                            <EditText
+                                android:id="@+id/etwarrshed"
+                                style="@style/MyEditTextStyle"
+                                android:hint="@string/warranty_shed"
+                                android:focusableInTouchMode="false"
+                                android:focusable="false"
+                                android:cursorVisible="false"
+                                android:inputType="none" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/li6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/li5"
+                        android:layout_marginTop="@dimen/value_10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/etmgf"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginRight="@dimen/value_5dp"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/etmgfwarr1"
+                                style="@style/MyEditTextStyle"
+                                android:focusableInTouchMode="false"
+                                android:focusable="false"
+                                android:cursorVisible="false"
+                                android:hint="@string/mfg1"
+                                android:inputType="none" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/etmgf1"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/value_5dp"
+                            android:layout_weight="1"
+
+                            >
+
+                            <EditText
+                                android:id="@+id/etmgfwarr2"
+                                style="@style/MyEditTextStyle"
+                                android:hint="@string/mfg2"
+                                android:focusableInTouchMode="false"
+                                android:focusable="false"
+                                android:cursorVisible="false"
+                                android:inputType="none" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/etcoms"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/li6"
+                        android:layout_marginTop="@dimen/value_10dp">
+
+                        <EditText
+                            android:id="@+id/etcomsum"
+                            style="@style/MyEditTextStyle"
+                            android:hint="@string/complaint_summary"
+                            android:inputType="textMultiLine"
+                            android:maxLines="3" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <Button
+                        android:id="@+id/btnext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/etcoms"
+                        android:layout_marginLeft="@dimen/value_20dp"
+                        android:layout_marginTop="@dimen/value_30dp"
+                        android:layout_marginRight="@dimen/value_20dp"
+                        android:background="@drawable/button"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="@string/next"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/value_20sp" />
+                </RelativeLayout>
+
+
+
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</layout>

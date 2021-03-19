@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/value_10dp"
+        android:layout_marginTop="@dimen/value_10dp"
+        android:layout_marginRight="@dimen/value_10dp"
+        android:elevation="@dimen/value_20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value_10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/value_5dp"
+                android:layout_weight="1"
+
+                android:background="@drawable/board">
+
+
+                <Spinner
+                    android:id="@+id/sppart"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/value_50"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:overlapAnchor="false"
+                    android:spinnerMode="dropdown" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value_10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/value_5dp"
+                android:layout_weight="1"
+
+                android:background="@drawable/board">
+
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/value_50"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:overlapAnchor="false"
+                    android:spinnerMode="dropdown" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/li2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value_10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/value_5dp"
+                android:layout_weight="1"
+
+                android:background="@drawable/board">
+
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/sp1"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/value_50"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:overlapAnchor="false"
+                    android:spinnerMode="dropdown" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etaction"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recyclerview11"
+            android:layout_marginTop="@dimen/value_10dp">
+
+            <EditText
+                android:id="@+id/etamount"
+                style="@style/MyEditTextStyle"
+                android:hint="@string/amount"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/value_20dp"
+            android:layout_marginBottom="@dimen/value_20dp"
+
+            android:elevation="@dimen/value_20dp"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+
+
+            <Button
+                android:id="@+id/bt_save"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="@dimen/value_20dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Add"
+                android:textColor="@color/white"
+                android:textSize="@dimen/value_15sp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

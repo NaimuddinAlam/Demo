@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group>
+        <item
+            android:id="@+id/nav_my_profile"
+            android:checked="false"
+            android:fontFamily="@font/poppins_regular"
+            android:title="@string/profile" />
+    </group>
+    <group>
+        <item
+            android:id="@+id/nav_created"
+            android:checked="false"
+            android:fontFamily="@font/poppins_regular"
+            android:title="@string/created" />
+    </group>
+    <group>
+        <item
+            android:id="@+id/nav_assigmed"
+            android:checked="false"
+            android:fontFamily="@font/poppins_regular"
+            android:title="@string/assigned" />
+    </group>
+    <group>
+        <item
+            android:id="@+id/nav_lodge"
+            android:checked="false"
+            android:fontFamily="@font/poppins_regular"
+            android:title="@string/lodge" />
+    </group>
+    <group>
+        <item
+
+            android:id="@+id/nav_sataus"
+            android:checked="false"
+            android:fontFamily="@font/poppins_regular"
+            android:title="@string/status" />
+    </group>
+    <group>
+        <item
+
+
+            android:id="@+id/nav_anaysis"
+            android:checked="false"
+            android:fontFamily="@font/poppins_regular"
+            android:title="@string/analysis" />
+    </group>
+    <group>
+
+        <item
+            android:id="@+id/nav_change"
+            android:checked="false"
+            android:fontFamily="@font/poppins_regular"
+            android:title="@string/change_pass"
+           />
+    </group>
+
+
+    <group>
+        <item
+            android:id="@+id/nav_logout"
+            android:checked="false"
+            android:fontFamily="@font/poppins_regular"
+            android:title="@string/logout" />
+    </group>
+</menu>
